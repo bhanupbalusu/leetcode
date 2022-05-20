@@ -1,15 +1,8 @@
-package main
+package multiplepointerspattern
 
-import (
-	"fmt"
-)
-
-func main() {
-	fmt.Println(SumZeroPair([]int{-5, -2, -1, 0, 2, 3, 4, 7, 9}))
-}
-
+// Works for sorted array
+// [-5, -2, -1, 0, 2, 3, 4, 7, 9]
 func SumZeroPair(a1 []int) []int {
-	// [-5, -2, -1, 0, 2, 3, 4, 7, 9]
 	j := len(a1) - 1
 	for i := 0; i < j; {
 		if a1[i]+a1[j] == 0 {
